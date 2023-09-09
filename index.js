@@ -3,7 +3,7 @@ function updateUTCTime(){
     const UTCTimeElement = document.querySelector('[data-testid="currentUTCTime"]');
     const currentDayElement = document.querySelector('[data-testid="currentDayofTheWeek"]');
 
-    const currentTime = new Date().toTimeString();
+    const currentTime = new Date(). getTime();
     const day = new Date().getDay()
     const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
     const actualDay = days[day]
@@ -17,4 +17,4 @@ function updateUTCTime(){
 
 updateUTCTime();
 
-setInterval(updateUTCTime, 1000);
+setInterval(updateUTCTime, 1);
