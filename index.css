@@ -3,7 +3,7 @@
     margin: 0%;
 }
 
-h1{
+h1[data-testid="slackUserName"]{
     display: flex;
     justify-content: center;
     border: 2px solid;
@@ -14,13 +14,15 @@ h1{
     margin-left: 7rem;
     margin-right: 7rem;
     width: 65rem;
-    gap: 10rem;
-    color: #fff;
+    color:#ff6600;
+    position:absolute;
+    z-index: 5%;
+    top: 5%;
     
     
 }
-   #img-container{width:30rem;
-    height:20rem;
+   img[data-testid="slackDisplayImage"]{width:30rem;
+    height:10%;
     display: flex;
     justify-content: center;
     padding-top: 20rem;
@@ -32,19 +34,13 @@ h1{
 
 }
 
-#time{
+p{
     display: flex;
     justify-content: center;
-    padding-left:10%;
     gap: 3rem;
-    padding-right:10%;
-}
-
-.track{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-right:25%;
+    padding-left:30%;
+    padding-inline:30%;
+    
 }
 
 a{
@@ -63,7 +59,12 @@ body{
     background-color: aqua;
 }
 
-h5{
-    padding-right: 10%;
-    padding-left: 10%;
+h5[data-testid="myTrack"]{
+    padding-left:55%;
+    margin-bottom:5%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+    
 }
