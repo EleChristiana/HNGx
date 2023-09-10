@@ -1,3 +1,5 @@
+
+//function to update UTC time
 function updateUTCTime(){
 
     const UTCTimeElement = document.querySelector('[data-testid="currentUTCTime"]');
@@ -14,7 +16,8 @@ function updateUTCTime(){
 
  
 }
-
+//call the function to update the initial time
 updateUTCTime();
 
+//setInterval to update the time continuously
 setInterval(updateUTCTime, 1);
