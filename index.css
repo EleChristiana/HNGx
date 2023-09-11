@@ -13,7 +13,7 @@ h1[data-testid="slackUserName"]{
     border-width: 2rem;
     margin-left: 7rem;
     margin-right: 7rem;
-    width: 65rem;
+    width:65rem;
     color:#ff6600;
     position:absolute;
     z-index: 5%;
@@ -34,18 +34,24 @@ h1[data-testid="slackUserName"]{
 
 }
 
-p{
+p[data-testid="currentUTCTime"]{
     display: flex;
     justify-content: center;
     gap: 3rem;
     padding-left:30%;
     padding-inline:30%;
-    
-}
+    position:relative;
+    top: -220px;
 
-a{
+}  
+
+
+a[data-testid="githubURL"] {
     text-decoration: none;
-    padding-left:55%;
+    padding-left:48%;
+    position:relative;
+    top: -240px;
+
     
     
     
@@ -60,11 +66,23 @@ body{
 }
 
 h5[data-testid="myTrack"]{
-    padding-left:55%;
+    padding-left:1%;
     margin-bottom:5%;
     display: flex;
     justify-content: center;
     text-align: center;
+    position:relative;
+    top:-210px;
+
     
     
+}
+
+span[data-testid="currentDayofTheWeek"]{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:10px;
+    position:relative;
+    top: -230px;
 }
